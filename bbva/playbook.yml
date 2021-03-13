@@ -1,13 +1,13 @@
 - hosts: dbservers
   become: yes
   tasks:
-   - name: install MariaDB server
-     yum:
+    - name: install MariaDB server
+      yum:
        name: mariadb-server
        state: latest
 
-   - name: enable and start MariaDB server
-     service:
+    - name: enable and start MariaDB server
+      service:
        name: mariadb
        enabled: yes
        state: started
