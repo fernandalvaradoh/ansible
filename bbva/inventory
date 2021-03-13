@@ -1,0 +1,16 @@
+[webservers]
+node-1 ansible_host=172.17.0.60
+
+[dbservers]
+node-2 ansible_host=172.17.0.60
+
+[logservers]
+node-3 ansible_host=172.17.0.60
+
+[lamp:children]
+webservers
+dbservers
+logservers
+
+[all:vars]
+ansible_user=root
