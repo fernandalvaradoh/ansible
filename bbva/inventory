@@ -1,11 +1,11 @@
 [webservers]
-node-1 ansible_host=172.17.0.50
+node-1 ansible_host=172.17.0.22
 
 [dbservers]
-node-2 ansible_host=172.17.0.50
+node-2 ansible_host=172.17.0.22
 
 [logservers]
-node-3 ansible_host=172.17.0.50
+node-3 ansible_host=172.17.0.22
 
 [lamp:children]
 webservers
