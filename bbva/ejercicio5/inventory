@@ -1,9 +1,9 @@
 [ftpservers]
-node-1 ansible_host=YOUR_IP
-node-2 ansible_host=YOUR_IP
+node-1 ansible_host=172.17.0.50
+node-2 ansible_host=172.17.0.50
 
 [ftpclients]
-node-3 ansible_host=YOUR_IP
+node-3 ansible_host=172.17.0.50
 
 [all:vars]
 ansible_user=root
